@@ -1,5 +1,5 @@
 /*
-   Copyright 2014 Nebez Briefkani
+   Copyright 2014 Nebez Briefkani / 2016 Corin Faife
    floppybird - main.js
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -136,7 +136,7 @@ function startGame()
    }
 
    //start up our loops
-   var updaterate = 1000.0 / 60.0 ; //60 times a second
+   var updaterate = 1000.0 / 45.0 ; //45 times a second
    loopGameloop = setInterval(gameloop, updaterate);
    loopPipeloop = setInterval(updatePipes, 1400);
 

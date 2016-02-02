@@ -497,13 +497,13 @@ var isIncompatible = {
    }
 };
 
-var myAudio = new Audio('assets/sounds/AreaCodes.mp3');
-myAudio.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-}, false);
-myAudio.play();
-
-function stopAudio () {
-	myAudio.pause();
-}
+// var myAudio = new Audio('assets/sounds/AreaCodes.mp3');
+// myAudio.addEventListener('ended', function() {
+//     this.currentTime = 0;
+//     this.play();
+// }, false);
+// myAudio.play();
+//
+// function stopAudio () {
+// 	myAudio.pause();
+// }

@@ -136,7 +136,7 @@ function startGame()
    }
 
    //start up our loops
-   var updaterate = 1000.0 / 45.0 ; //45 times a second
+   var updaterate = 1000.0 / 50.0 ; //50 times a second
    loopGameloop = setInterval(gameloop, updaterate);
    loopPipeloop = setInterval(updatePipes, 1400);
 
@@ -496,3 +496,14 @@ var isIncompatible = {
    return (isIncompatible.Android() || isIncompatible.BlackBerry() || isIncompatible.iOS() || isIncompatible.Opera() || isIncompatible.Safari() || isIncompatible.Windows());
    }
 };
+
+var myAudio = new Audio('assets/sounds/AreaCodes.mp3');
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();
+
+function stopAudio () {
+	myAudio.pause();
+}
